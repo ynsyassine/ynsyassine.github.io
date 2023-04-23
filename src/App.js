@@ -31,8 +31,8 @@ function App() {
 
     const RenderItemNavBar = ({item}) => {
       return (
-        <li className={`${mode==1 ? 'text-light' : ''}`}>
-          <span className={`${mode==1 ? 'text-blue' : ''}operator`}>&lt; </span>
+        <li className={`${mode===1 ? 'text-light' : ''}`}>
+          <span className={`${mode===1 ? 'text-blue' : ''}operator`}>&lt; </span>
           <span className=""> {item.name} </span>
           <span className="operator text-blue"> / &gt; </span>
         </li>
@@ -42,9 +42,9 @@ function App() {
     return (
       <div className="page_header-container">
         <div className="header_left-container">
-          <span className={`${mode==1 ? 'text-blue' : ''}`}>&lt; / </span>
-          <span className={`${mode==1 ? 'text-light' : ''}`}> yassine el boustani </span>
-          <span className={`${mode==1 ? 'text-blue' : ''}`}> &gt; </span>
+          <span className={`${mode===1 ? 'text-blue' : ''}`}>&lt; / </span>
+          <span className={`${mode===1 ? 'text-light' : ''}`}> yassine el boustani </span>
+          <span className={`${mode===1 ? 'text-blue' : ''}`}> &gt; </span>
         </div>
         <div className="header_center-container">
           {
@@ -54,10 +54,10 @@ function App() {
           }
         </div>
         <div className="header_right-container">
-          <i className={`${mode==1 ? 'light-blue' : ''} fa fa-github `}></i>
-          <i className={`${mode==1 ? 'light-blue' : ''} fa fa-envelope `}></i>
-          <i className={`${mode==1 ? 'light-blue' : ''} fa fa-twitter `}></i>
-          <i className={`${mode==1 ? 'light-blue' : ''} fa fa-linkedin `}></i>
+          <i className={`${mode===1 ? 'light-blue' : ''} fa fa-github `}></i>
+          <i className={`${mode===1 ? 'light-blue' : ''} fa fa-envelope `}></i>
+          <i className={`${mode===1 ? 'light-blue' : ''} fa fa-twitter `}></i>
+          <i className={`${mode===1 ? 'light-blue' : ''} fa fa-linkedin `}></i>
         </div>
         <div className="header-switch-mode"> 
           <div className="switch-content">
